@@ -24,34 +24,34 @@ public class BeerLoader implements CommandLineRunner {
 //        loadBeerObjects();
     }
 
-    private void loadBeerObjects(){
-        if(beerRepository.count() == 0) {
-            beerRepository.save(Beer.builder()
-                            .beerName("Heineken")
-                            .beerStyle("IPA")
-                            .quantityToBrew(200)
-                            .minOnHand(12)
-                            .upc(BEER_1_UPC)
-                            .price(new BigDecimal("12.95"))
-                            .build());
-
-            beerRepository.save(Beer.builder()
-                    .beerName("Budweiser")
-                    .beerStyle("Draught")
-                    .quantityToBrew(200)
-                    .minOnHand(12)
-                    .upc(BEER_2_UPC)
-                    .price(new BigDecimal("10.95"))
-                    .build());
-            beerRepository.save(Beer.builder()
-                    .beerName("KingFisher")
-                    .beerStyle("ALE")
-                    .quantityToBrew(500)
-                    .minOnHand(12)
-                    .upc(BEER_3_UPC)
-                    .price(new BigDecimal("9.95"))
-                    .build());
-        }
+//    private void loadBeerObjects(){
+//        if(beerRepository.count() == 0) {
+//            beerRepository.save(Beer.builder()
+//                            .beerName("Heineken")
+//                            .beerStyle("IPA")
+//                            .quantityToBrew(200)
+//                            .minOnHand(12)
+//                            .upc(BEER_1_UPC)
+//                            .price(new BigDecimal("12.95"))
+//                            .build());
+//
+//            beerRepository.save(Beer.builder()
+//                    .beerName("Budweiser")
+//                    .beerStyle("Draught")
+//                    .quantityToBrew(200)
+//                    .minOnHand(12)
+//                    .upc(BEER_2_UPC)
+//                    .price(new BigDecimal("10.95"))
+//                    .build());
+//            beerRepository.save(Beer.builder()
+//                    .beerName("KingFisher")
+//                    .beerStyle("ALE")
+//                    .quantityToBrew(500)
+//                    .minOnHand(12)
+//                    .upc(BEER_3_UPC)
+//                    .price(new BigDecimal("9.95"))
+//                    .build());
+//        }
 //        System.out.println("Loaded Beers: " + beerRepository.count());
-    }
+//    }
 }
