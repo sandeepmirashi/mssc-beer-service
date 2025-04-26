@@ -5,7 +5,7 @@ import guru.springframework.msscbeerservice.web.model.BeerDto;
 import org.mapstruct.DecoratedWith;
 import org.mapstruct.Mapper;
 
-@Mapper(uses = {DataMapper.class})
+@Mapper(componentModel = "spring", uses = {DataMapper.class})
 @DecoratedWith(BeerMapperDecorator.class)
 public interface BeerMapper {
     BeerDto BeerToBeerDto(Beer beer);
