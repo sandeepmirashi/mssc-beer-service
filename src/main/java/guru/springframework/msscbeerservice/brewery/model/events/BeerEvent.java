@@ -1,7 +1,7 @@
-package sfg.common.events;
+package guru.springframework.msscbeerservice.brewery.model.events;
 
 
-import guru.springframework.msscbeerservice.web.model.BeerDto;
+import guru.springframework.msscbeerservice.brewery.model.BeerDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
